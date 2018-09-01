@@ -1,0 +1,7 @@
+{
+  "name": "walk",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
