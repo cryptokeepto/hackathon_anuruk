@@ -6,11 +6,26 @@
   </ion-header>
 
   <ion-content>
+
     <ion-list>
+      <ion-item>
+        <ion-avatar item-left>
+          <img [src]="photoURL">
+        </ion-avatar>
+        <h2>Hi, {{ displayName }}</h2>
+        <p>{{ email }}</p>
+      </ion-item>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
+      <button menuClose ion-item (click)="logout()">
+        <ion-label color="primary">
+          <ion-icon name="log-out"></ion-icon> Logout
+        </ion-label>
+      </button>
     </ion-list>
+
+
   </ion-content>
 
 </ion-menu>

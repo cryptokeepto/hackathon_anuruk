@@ -1,0 +1,81 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="exit()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>วัดช้างล้อม</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <img src="/assets/imgs/a.jpg" />
+    <ion-card-content>
+      <p>
+        วัดช้างล้อม เป็นโบราณสถานสำคัญ ตั้งอยู่ในอุทยานประวัติศาสตร์ศรีสัชนาลัย อำเภอศรีสัชนาลัย จังหวัดสุโขทัย มีเจดีย์ทรงลังกาที่ตั้งอยู่บนฐานประทักษิณรูปสี่เหลี่ยมจัตุรัส
+        มีช้างปูนปั้นเต็มตัวล้อมรอบ ซึ่งเป็นที่มาของชื่อโดยรอบฐานทั้ง 4 ด้าน รวม 39 เชือก หมายถึง โพธิปักขิยธรรม 37 ประการ
+        ซึ่งเป็นธรรมอันเป็นเครื่องหมายการตรัสรู้ ประกอบกับวิมุตติ 2 ประการ
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="sketchfab-embed-wrapper">
+    <iframe width="100%" height="480" src="https://sketchfab.com/models/36390345f2dc4ef28c03f88d0881661e/embed?autospin=0.2&amp;autostart=1"
+      frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+
+  <hr>
+
+  <ion-card>
+    <img src="https://www.oliveboard.in/blog/wp-content/uploads/2017/02/Feature.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        วัดช้างล้อมมีช้างกทั้งหมดกี่เชือก ?
+      </ion-card-title>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <ion-card (click)="correct('0')">
+              <h1>
+                24
+              </h1>
+            </ion-card>
+          </ion-col>
+          <ion-col col-6>
+            <ion-card (click)="correct('0')">
+              <h1>
+                93
+              </h1>
+            </ion-card>
+          </ion-col>
+
+        </ion-row>
+        <hr>
+        <ion-row>
+          <ion-col col-6>
+            <ion-card (click)="correct('1')">
+              <h1>
+                39
+              </h1>
+            </ion-card>
+          </ion-col>
+          <ion-col col-6>
+            <ion-card (click)="correct('0')">
+              <h1>
+                2
+              </h1>
+            </ion-card>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

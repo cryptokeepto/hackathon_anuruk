@@ -20,12 +20,30 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/barcode-scanner": "^4.12.2",
     "@ionic-native/core": "~4.12.0",
+    "@ionic-native/pedometer": "^4.12.2",
+    "@ionic-native/qr-scanner": "^4.12.2",
     "@ionic-native/splash-screen": "~4.12.0",
     "@ionic-native/status-bar": "~4.12.0",
+    "@ionic-native/stepcounter": "^4.12.2",
     "@ionic/storage": "2.1.3",
+    "angularfire2": "^5.0.0-rc.12",
+    "cordova-android": "7.0.0",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.1.2",
+    "cordova-plugin-ionic-webview": "^2.1.0",
+    "cordova-plugin-pedometer": "^0.4.1",
+    "cordova-plugin-qrscanner": "^2.6.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-stepcounter": "^1.0.1",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "firebase": "^5.4.2",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
+    "phonegap-plugin-barcodescanner": "^8.0.0",
+    "promise-polyfill": "^8.1.0",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"
@@ -34,5 +52,24 @@
     "@ionic/app-scripts": "3.2.0",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-qrscanner": {},
+      "cordova-plugin-pedometer": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-stepcounter": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
 }
